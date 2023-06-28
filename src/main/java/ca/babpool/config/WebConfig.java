@@ -21,7 +21,8 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins("http://localhost:3000","http://localhost:3001","http://172.30.1.50:3000",
                         "http://babpoolme.s3-website.ap-northeast-2.amazonaws.com","http://babpoolowner.store",
                         "http://babpool-owner.s3-website.ap-northeast-2.amazonaws.com","http://babpoolmember.store",
-                        "https://babpoolapp.shop", "https://babpoolowner.store", "https://www.babpoolme.store","https://babpoolmember.store"
+                        "https://babpoolapp.shop", "https://babpoolowner.store", "https://www.babpoolme.store","https://babpoolmember.store",
+                        "http://www.babpoolmember.store.s3-website.us-east-2.amazonaws.com","http://babpoolowner.store.s3-website-us-east-1.amazonaws.com"
                         )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*", "Content-Type", "Authorization")
