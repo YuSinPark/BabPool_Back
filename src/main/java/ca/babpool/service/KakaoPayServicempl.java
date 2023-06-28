@@ -18,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 public class KakaoPayServicempl implements KakaoPayService{
     static final String cid = "TC0ONETIME";
 
-    static final String url = "https://babpoolowner.store:3000";
+    static final String url = "http://babpoolmember.store";
     private final SqlSession sqlSession;
 
     @Value("${kakao.admin.key}")
