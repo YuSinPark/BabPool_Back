@@ -7,7 +7,7 @@
         (SELECT COUNT(*) FROM review rv WHERE rv.RESTAURANT_ID = r.RESTAURANT_ID) AS review_count,
         MAX(rd.RD_ID) AS RD_ID, MAX(rd.RD_AREA) AS RD_AREA, MAX(rd.RD_TIME_MIN) AS RD_TIME_MIN, MAX(rd.RD_TIME_MAX) AS RD_TIME_MAX, MAX(rd.RD_TIME_AVG) AS RD_TIME_AVG
         FROM likes L
-        JOIN restaurant R ON L.RESTAURANT_ID = R.RESTAURANT_ID
+        JOIN restaurant r ON L.RESTAURANT_ID = r.RESTAURANT_ID
         LEFT JOIN restaurantdelivery rd ON rd.RESTAURANT_ID = r.RESTAURANT_ID
         LEFT JOIN menu m ON m.RESTAURANT_ID = r.RESTAURANT_ID
         WHERE L.MEMBER_ID = #{memberId}
