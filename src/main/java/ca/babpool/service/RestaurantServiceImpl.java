@@ -41,7 +41,7 @@ public class RestaurantServiceImpl implements RestaurantService {
     private final OrderMenuSubMapper orderMenuSubMapper;
     private final GeocodeUtil geocodeUtil;
     private final ImgUploadService imgUploadService;
-    private final SmsService smsService;
+//    private final SmsService smsService;
     private final MemberMapper memberMapper;
 
     private final RestaurantDeliveryMapper restaurantDeliveryMapper;
