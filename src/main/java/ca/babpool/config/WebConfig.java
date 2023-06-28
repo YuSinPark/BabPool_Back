@@ -19,8 +19,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("http://localhost:3000","http://localhost:3001","http://172.30.1.50:3000",
-                        "http://babpoolme.s3-website.ap-northeast-2.amazonaws.com",
-                        "http://babpool-owner.s3-website.ap-northeast-2.amazonaws.com",
+                        "http://babpoolme.s3-website.ap-northeast-2.amazonaws.com","http://babpoolowner.store",
+                        "http://babpool-owner.s3-website.ap-northeast-2.amazonaws.com","http://babpoolmember.store",
                         "https://babpoolapp.shop", "https://babpoolowner.store", "https://www.babpoolme.store","https://babpoolmember.store"
                         )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
