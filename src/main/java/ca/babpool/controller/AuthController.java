@@ -56,12 +56,12 @@ public class AuthController {
         return apiResponse.getSingleResult(oAuthService.login(params));
     }
 
-    @GetMapping("/naver")
-    public SingleResult<AuthToken> loginNaver(@RequestParam("code") String code) {
-        NaverLoginParams params = new NaverLoginParams();
-        params.setAuthorizationCode(code);
-        return apiResponse.getSingleResult(oAuthService.login(params));
-    }
+//    @GetMapping("/naver")
+//    public SingleResult<AuthToken> loginNaver(@RequestParam("code") String code) {
+//        NaverLoginParams params = new NaverLoginParams();
+//        params.setAuthorizationCode(code);
+//        return apiResponse.getSingleResult(oAuthService.login(params));
+//    }
 
     @PostMapping("/plusInfo")
     public CommonResult PlusMemberInfo(@RequestBody MemberRequestDto requestDto) {
